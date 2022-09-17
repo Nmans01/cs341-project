@@ -1,0 +1,22 @@
+[Pixar/3D Artist Animator]
+
+“As a 3D animator, I want to create environments with a style, whether realistic or cartoonish, that fits the atmosphere of the production that I am working on. I want to be able to do this in a way that is fast and can yield multiple similar results, so that I can quickly proof and decide which option best suits my project.”
+
+A pixar artist can use this software to generate a terrain for a scene that they will animate characters on. This software will save them time by generating a background and setting for their story.
+
+
+[Game Designer]
+
+“As a game designer, I want to create environments with a specific level of detail, so that they meet the stylistic needs of my game without becoming too hardware-intensive. I also want to be able to arrange many game objects in a realistic way, so that I can spend less time on fine-tuning.”
+
+A game designer would be able to really benefit from a software like this because when you are designing a game it would speed the process up a lot if the developers had auto generated backgrounds that they could choose from. Making a game comes with a lot of different components and usually a lot of different maps for players to play on so in this case the dev team could use multiple auto-generated backgrounds from our software which would be a huge help.
+
+
+[Crypto artist]
+
+“As a blockchain artist, I want to be able to churn out many art pieces that are various but still coherent in style. I also want control over artistic components such as perspective (via camera control) so that I can make my pieces look intentional.”
+
+
+[Hobbyist that likes sharing their art online]
+
+“As a hobby artist, I want to be able to freely share my art online, so that it can be seen and supported by others, and so that I can see what others are creating. I also want a place to be able to apply my 3D models so that I can showcase them.”
