@@ -1,0 +1,30 @@
+project requirements - the finished project should consist of the following:
+  - a website, with multiple pages
+    + a home page outline what the website is and giving links to other pages
+    + a 'sign in' button, allowing users to create an account with which to save and share their work
+    + a 'create' page for the procedural terrain generator, as described below
+    + an 'explore' page showcasing what users have made in the generator
+    + an about page, explaining who we are and the goal of the project
+  - the terrain generator
+    + this page will contain of a 3D view of a terrain mesh
+      - this will make use of the THREE.js javascript library
+      - users will be able to move the camera with mouse controls, allowing them to alter the perspective and explore the terrain
+      - the 3D will display a small map giving a 2d top-down view
+    + this page will also contain a user interface
+      - likely in the form of a sidebar
+      - this UI will contain a list of options pertaining to how the terrain is generated
+        * some examples include how large the map will be, its maximum height, etc.
+      - will have save and share options if the user is signed in
+    + terrain generation algorithm - this has multiple parts:
+      - perlin noise - used to create a heightmap that is random but continuous, a smooth plane of hills and valleys
+      - users will be have the option to import heightmaps that can be applied in conjunction with the noise-generated map
+      - poisson disk sampling - can be used to procedurally arrange objects, imported 3D models in this case
+        * users can specify how close together they want objects to be, and on what steepness the objects should be placed
+      - color options - users can specify the color of the terrain based on height, ex. white for snowy peaks and yellow for sandy beaches
+      - customizable "sea level" to add water to the map
+  - the explore page
+    + this page will contain a 'feed' of creations from users 
+      - creations include maps but may also include 3d models
+    + will include search options to search for creations by title and username
+    + possibly a like/upvote system
+  - the about page
