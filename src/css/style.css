@@ -1,0 +1,70 @@
+html {
+    background-color: rgb(24, 39, 71);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    background-color: rgb(100, 126, 104);
+    padding: 10px;
+    padding-top: 25px;
+    margin: -10px;
+
+    color: rgb(216, 216, 216);
+    text-transform:uppercase;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#title {
+    margin: 5px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+#title > h1 {
+    margin: 5px;
+}
+#user {
+    padding: 5px;
+    padding-left: 10px;
+    margin-left: auto;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+}
+#user > img {
+    margin-left:  3px;
+    padding: 4px;
+    border-radius: 23px;
+    width: 38px;
+    background-color: rgb(100, 126, 104);
+}
+#user:hover {
+    background-color: rgb(216, 216, 216);
+    color:rgb(86, 43, 8);
+}
+
+#nav {
+    margin-left: 5px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+#nav > * {
+    padding: 5px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+#nav > *:hover  {
+    background-color: rgb(216, 216, 216);
+    color:rgb(86, 43, 8);
+}
