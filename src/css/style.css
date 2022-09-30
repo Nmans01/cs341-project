@@ -17,7 +17,7 @@ html {
     justify-content: center;
     flex-direction: column;
 }
-
+/* this is a style guide for the title */
 #title {
     margin: 5px;
 
