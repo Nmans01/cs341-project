@@ -2,7 +2,7 @@ html {
     background-color: rgb(24, 39, 71);
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* this is a style guide for the header with a flex box added */
 #header {
     background-color: rgb(100, 126, 104);
     padding: 10px;
