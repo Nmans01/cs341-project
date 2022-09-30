@@ -28,6 +28,7 @@ html {
 #title > h1 {
     margin: 5px;
 }
+
 #user {
     padding: 5px;
     padding-left: 10px;
@@ -37,6 +38,7 @@ html {
     display: flex;
     align-items: center;
 }
+/* style guide for the image */
 #user > img {
     margin-left:  3px;
     padding: 4px;
