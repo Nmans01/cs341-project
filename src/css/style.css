@@ -46,6 +46,7 @@ html {
     width: 38px;
     background-color: rgb(100, 126, 104);
 }
+/* creating a look when the mouse is hovered over the buttons */
 #user:hover {
     background-color: rgb(216, 216, 216);
     color:rgb(86, 43, 8);
