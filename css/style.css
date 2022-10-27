@@ -3,7 +3,7 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 /* this is a style guide for the header with a flex box added */
-#header {
+header {
     background-color: rgb(100, 114, 126);
     padding: 10px;
     padding-top: 25px;
