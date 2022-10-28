@@ -2,7 +2,7 @@
     <div id="title">
         <h1>( ✓ ) Podium Check</h1>
         <div id="user">
-            Welcome back, user.
+            <div>Welcome back, user.</div>
             <img src="./img/offwhite-user-png.png">
         </div>
     </div>
