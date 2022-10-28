@@ -9,8 +9,11 @@
             require('header.php');
         ?>
         <div id="main">
-            <h2>Sample Title Text</h2>
-            <p>Text</p>
+            <h2>About The Site</h2>
+            <p>This site was created by Noah George, Nate Mansfield, Nick Nolt, and Ethan Weitkamp as our semester project for CS341.</p>
+            <p>It serves to improve upon the ITS department's process for completing podium checks, which ensure that classroom audio-video technology is functioning properly.</p>
+            <h2>Documentation</h2>
+            <p><a href=""></a></p>
         </div>
     </body>
 </html>

@@ -10,6 +10,6 @@
         <a href="index.php">Home</a>
         <a href="create.html">Podium Check Form</a>
         <a href="explore.html">Analytics</a>
-        <a href="about.html">About</a>
+        <a href="about.php">About</a>
     </div>
 </header>
