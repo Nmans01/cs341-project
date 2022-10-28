@@ -8,8 +8,9 @@
     </div>
     <div id="nav">
         <a href="index.php">Home</a>
-        <a href="create.html">Podium Check Form</a>
-        <a href="explore.html">Analytics</a>
+        <a href="form.php">Podium Check Form</a>
+        <a href="trends.php">Trends</a>
         <a href="about.php">About</a>
+        <a href="admin.php">Admin</a>
     </div>
 </header>
