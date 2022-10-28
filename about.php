@@ -1,8 +1,9 @@
 <html>
     <head>
         <title>About</title>
-        <link rel="icon" type="image/x-icon" href="./img/podium2.png">
-        <link rel="stylesheet" href="./css/style.css">
+        <?PHP
+            require('head.php');
+        ?>
     </head>
     <body>
         <?PHP

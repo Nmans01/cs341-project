@@ -2,7 +2,6 @@ html {
     /*background-color: rgb(24, 39, 71);*/
     font-family: Arial, Helvetica, sans-serif;
 }
-/* this is a style guide for the header with a flex box added */
 header {
     background-color: rgb(100, 114, 126);
     padding: 10px;
@@ -18,7 +17,6 @@ header {
     justify-content: center;
     flex-direction: column;
 }
-/* this is a style guide for the title */
 #title {
     margin: 5px;
 
@@ -41,7 +39,6 @@ header {
     display: flex;
     align-items: center;
 }
-/* style guide for the image */
 #user > img {
     margin-left:  3px;
     padding: 4px;
@@ -49,13 +46,11 @@ header {
     width: 38px;
     background-color: rgb(100, 114, 126);
 }
-/* creating a look when the mouse is hovered over the buttons */
 #user:hover {
     background-color: rgb(216, 216, 216);
     color: rgb(86, 43, 8);
 }
-/* nav bar style along with the hover functionality */
-#nav {
+nav {
     margin-left: 5px;
 
     display: flex;
@@ -64,15 +59,14 @@ header {
     flex-direction: row;
 }
 
-#nav > * {
+nav > * {
     padding: 5px;
     text-decoration: none;
     color: inherit;
     border-radius: 3px;
     margin-right: 10px;
 }
-
-#nav > *:hover {
+nav > *:hover {
     background-color: rgb(216, 216, 216);
     box-shadow: inset 2px 2px 2px rgb(79, 82, 85),
                 inset -1px -1px 2px rgb(116, 121, 126);
@@ -84,5 +78,16 @@ header {
     color: rgb(86, 43, 8);
     border-radius: 3px;
     padding: 10px;
-    height: 2000px;
+    padding-bottom: 200px;
+}
+
+/* Style for smaller screens */
+@media screen and (max-width: 710px) {
+    #title > h1 {
+        font-size: 160%;
+    }
+
+    #user > div {
+        display: none;
+    }
 }
