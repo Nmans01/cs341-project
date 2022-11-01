@@ -2,14 +2,15 @@
     <div id="title">
         <h1>( ✓ ) The Lighthouse</h1>
         <div id="user">
-            Welcome back, user.
+            <div>Welcome back, user.</div>
             <img src="./img/offwhite-user-png.png">
         </div>
     </div>
-    <div id="nav">
+    <nav>
         <a href="index.php">Home</a>
-        <a href="create.html">Podium Check Form</a>
-        <a href="explore.html">Analytics</a>
-        <a href="about.html">About</a>
-    </div>
+        <a href="form.php">Podium Check Form</a>
+        <a href="trends.php">Trends</a>
+        <a href="about.php">About</a>
+        <a href="admin.php">Admin</a>
+</nav>
 </header>
