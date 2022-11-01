@@ -7,10 +7,10 @@
         <?PHP
             require('header.php');
         ?>
-        <div id="main">
+        <main id="main">
             <h2>You've reached a stub!</h2>
             <p>We're still working on this page, but check back soon!</p>
-            <img src='./img/construction.png'>
-        </div>
+            <img id='stub' src='./img/construction.png'>
+        </main>
     </body>
 </html>

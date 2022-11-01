@@ -1,6 +1,6 @@
 <header>
     <div id="title">
-        <h1>The Lighthouse</h1>
+        <h1>Litehouse Podium Check</h1>
         <a href="login.php" id="user">
             <div>Welcome back, user.</div>
             <img src="./img/offwhite-user-png.png">

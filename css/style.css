@@ -1,17 +1,32 @@
 
-/* Etown official colors:
+/* 
+Etown official colors:
   - Main blue   004B98
   - Dark blue   0A2240
   - Red         E1261C
   - Light blue  3DB5E6
   - Cool gray   C8C8C8
-  */
+
+extracted HEX:
+  - rich-black-fogra-29 #001828ff;
+  - blue-sapphire       #216077ff;
+  - gunmetal            #0E323Fff;
+  - heliotrope-gray     #9F92A8ff;
+  - pale-cerulean       #A9C5DAff;
+*/
 
 html {
     /*background-color: rgb(24, 39, 71);*/
     font-family: Arial, Helvetica, sans-serif;
+
+    background-color: rgb(117, 122, 124);
 }
 header {
+    background-image: url('../img/projector-blur.png');
+    background-size: 180%;
+    background-position-x: 25%;
+    background-position-y: 75%;
+
     background-color: #3c6792;
     padding: 10px;
     padding-top: 25px;
@@ -25,6 +40,8 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    border-bottom: solid 5px #001828ff;
 }
 #title {
     margin: 5px;
@@ -40,6 +57,7 @@ header {
 }
 
 #user {
+    text-shadow: .5px 1px rgb(86, 43, 8);
     padding: 5px;
     padding-left: 10px;
     margin-left: auto;
@@ -58,6 +76,7 @@ header {
 #user:hover {
     background-color: rgb(216, 216, 216);
     color: rgb(86, 43, 8);
+    text-shadow: none;
 }
 nav {
     margin-left: 5px;
@@ -87,11 +106,10 @@ nav > *:hover {
 }
 
 #main {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(205, 199, 209);
     color: rgb(86, 43, 8);
     border-radius: 3px;
     padding: 10px;
-    padding-bottom: 200px;
 }
 
 /* Style for smaller screens */
@@ -103,4 +121,15 @@ nav > *:hover {
     #user > div {
         display: none;
     }
+
+    nav {
+        overflow-x: scroll;
+        -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0% 95%,rgba(0,0,0,0) 100%);
+    }
+}
+
+#stub {
+    opacity: .5;
+    position: relative;
+    z-index: 2;
 }
