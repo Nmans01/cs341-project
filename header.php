@@ -1,6 +1,6 @@
 <header>
     <div id="title">
-        <h1>( ✓ ) Podium Check</h1>
+        <h1>( ✓ ) The Lighthouse</h1>
         <div id="user">
             Welcome back, user.
             <img src="./img/offwhite-user-png.png">
