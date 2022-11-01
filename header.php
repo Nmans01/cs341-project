@@ -11,6 +11,7 @@
         <a href="form.php">Podium Check Form</a>
         <a href="trends.php">Trends</a>
         <a href="about.php">About</a>
+        <a href="about.php">Projector lamps</a>
         <a href="admin.php">Admin</a>
 </nav>
 </header>
