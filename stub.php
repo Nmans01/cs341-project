@@ -2,6 +2,9 @@
     <head>
         <title>Title</title>
         <link rel="stylesheet" href="./css/style.css">
+        <?PHP
+            require('head.php');
+        ?>
     </head>
     <body>
         <?PHP
@@ -12,5 +15,8 @@
             <p>We're still working on this page, but check back soon!</p>
             <img id='stub' src='./img/construction.png'>
         </main>
+        <?PHP
+            require('footer.php');
+        ?>
     </body>
 </html>

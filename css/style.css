@@ -14,12 +14,24 @@ extracted HEX:
   - heliotrope-gray     #9F92A8ff;
   - pale-cerulean       #A9C5DAff;
 */
+/* CSS HEX */
+:root {
+    --blue-sapphire: #216077ff;
+    --rich-black-fogra-29: #001828ff;
+    --heliotrope-gray: rgb(157, 128, 177);
+    --old-lavender: rgb(59, 50, 66);
+    --silver-sand: #C3CAD0ff;
+}
 
 html {
     /*background-color: rgb(24, 39, 71);*/
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 
-    background-color: rgb(117, 122, 124);
+    background-color: gray;
+}
+body {
+    margin: 0px;
 }
 header {
     background-image: url('../img/projector-blur.png');
@@ -27,13 +39,13 @@ header {
     background-position-x: 25%;
     background-position-y: 75%;
 
-    background-color: #3c6792;
+    background-color: var(--blue-sapphire);
     padding: 10px;
     padding-top: 25px;
-    margin: -10px;
+    margin: 0px;
     margin-bottom: 10px;
 
-    color: rgb(216, 216, 216);
+    color: var(--silver-sand);
     text-transform: uppercase;
     font-weight: bold;
 
@@ -41,7 +53,7 @@ header {
     justify-content: center;
     flex-direction: column;
 
-    border-bottom: solid 5px #001828ff;
+    border-bottom: solid 5px var(--rich-black-fogra-29);
 }
 #title {
     margin: 5px;
@@ -53,11 +65,11 @@ header {
 
 #title > h1 {
     margin: 5px; 
-    text-shadow: 1px 2px rgb(86, 43, 8);
+    text-shadow: 1px 2px var(--old-lavender);
 }
 
 #user {
-    text-shadow: .5px 1px rgb(86, 43, 8);
+    text-shadow: .5px 1px var(--old-lavender);
     padding: 5px;
     padding-left: 10px;
     margin-left: auto;
@@ -74,8 +86,10 @@ header {
     background-color: #3c6792;
 }
 #user:hover {
-    background-color: rgb(216, 216, 216);
-    color: rgb(86, 43, 8);
+    background-color: rgba(63, 49, 71, 0.5);
+    box-shadow: inset 2px 2px 2px rgb(79, 82, 85),
+                inset -1px -1px 2px rgb(154, 162, 170);
+    color: rgb(196, 174, 211);
     text-shadow: none;
 }
 nav {
@@ -99,15 +113,28 @@ nav > * {
     margin-right: 10px;
 }
 nav > *:hover {
-    background-color: rgb(216, 216, 216);
+    background-color: rgba(63, 49, 71, 0.5);
     box-shadow: inset 2px 2px 2px rgb(79, 82, 85),
                 inset -1px -1px 2px rgb(116, 121, 126);
-    color: rgb(86, 43, 8);
+    color: rgb(196, 174, 211);
 }
 
+footer {
+    background-color: #001828ff;
+    padding: 50px 30px;
+    margin: 0px;
+    margin-top: 10px;
+
+    color: rgb(216, 216, 216);
+    text-transform: uppercase;
+    font-weight: bold;
+}
 #main {
-    background-color: rgb(205, 199, 209);
-    color: rgb(86, 43, 8);
+    margin: 5px;
+    min-height: calc(100vh - 170px);
+
+    background-color: var(--silver-sand);
+    color: var(--old-lavender);
     border-radius: 3px;
     padding: 10px;
 }
@@ -124,7 +151,7 @@ nav > *:hover {
 
     nav {
         overflow-x: scroll;
-        -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0% 95%,rgba(0,0,0,0) 100%);
+        -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0% 87%,rgba(0,0,0,0) 100%);
     }
 }
 

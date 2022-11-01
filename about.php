@@ -11,7 +11,7 @@
         ?>
         <div id="main">
             <h2>About The Site</h2>
-            <p>This site was created by Noah George, Nate Mansfield, Nick Nolt, and Ethan Weitkamp as our semester project for CS341.</p>
+            <p>This site was created by Noah George, Nate Mansfield, Nick Nolt, and Ethan Weitkamp (a.k.a. The Brogrammers) as our semester project for CS341.</p>
             <p>It serves to improve upon the ITS department's process for completing podium checks, which ensure that classroom audio-video technology is functioning properly.</p>
             <h2>Documentation</h2>
             <ul>
@@ -20,5 +20,8 @@
                 <li><a href="./docs/ERD.png">ERD Model</a></li>
             </ul>
         </div>
+        <?PHP
+            require('footer.php');
+        ?>
     </body>
 </html>
