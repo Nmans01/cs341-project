@@ -1,9 +1,18 @@
+
+/* Etown official colors:
+  - Main blue   004B98
+  - Dark blue   0A2240
+  - Red         E1261C
+  - Light blue  3DB5E6
+  - Cool gray   C8C8C8
+  */
+
 html {
     /*background-color: rgb(24, 39, 71);*/
     font-family: Arial, Helvetica, sans-serif;
 }
 header {
-    background-color: rgb(100, 114, 126);
+    background-color: #3c6792;
     padding: 10px;
     padding-top: 25px;
     margin: -10px;
@@ -44,7 +53,7 @@ header {
     padding: 4px;
     border-radius: 23px;
     width: 38px;
-    background-color: rgb(100, 114, 126);
+    background-color: #3c6792;
 }
 #user:hover {
     background-color: rgb(216, 216, 216);
