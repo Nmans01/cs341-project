@@ -14,13 +14,12 @@ extracted HEX:
   - heliotrope-gray     #9F92A8ff;
   - pale-cerulean       #A9C5DAff;
 */
-/* CSS HEX */
 :root {
     --blue-sapphire: #216077ff;
     --rich-black-fogra-29: #001828ff;
     --heliotrope-gray: rgb(157, 128, 177);
     --old-lavender: rgb(59, 50, 66);
-    --silver-sand: #C3CAD0ff;
+    --silver-sand: rgb(233, 238, 243);
 }
 
 html {
@@ -133,7 +132,7 @@ footer {
     margin: 5px;
     min-height: calc(100vh - 170px);
 
-    background-color: var(--silver-sand);
+    background-color: white;
     color: var(--old-lavender);
     border-radius: 3px;
     padding: 10px;
@@ -151,11 +150,16 @@ footer {
 
     nav {
         overflow-x: scroll;
-        -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0% 87%,rgba(0,0,0,0) 100%);
+        -webkit-mask-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 0% 87%,rgba(0,0,0,.5) 100%);
+    }
+
+    #hide-when-small {
+        display: none;
     }
 }
 
 #stub {
+    max-width: 100%;
     opacity: .5;
     position: relative;
     z-index: 2;
