@@ -15,7 +15,7 @@
     require('header.php');
     ?>
     <main id="main">
-    <form>
+<form>
   <label for="proj1norm">Projector 1 normal hours:</label><br>
   <input type="number" id="proj1norm" name="proj1norm"><br>
   <label for="proj2eco">Projector 1 eco hours:</label><br>
