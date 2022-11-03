@@ -251,6 +251,15 @@ footer {
 
     }
 
+    footer {
+        min-height: 0px;
+        padding: 10px;
+    }
+    .vertical-spacer {
+        height: 2em;
+        margin: 0px 10px;
+    }
+
     .hide-when-small {
         display: none;
     }

@@ -3,7 +3,7 @@
 <?php //header("Location: stub.php"); ?>
 <html>
 <head>
-    <title>Stub!</title>
+    <title>Form</title>
     <link rel="stylesheet" href="./css/style.css">
     <?PHP
     require('head.php');
@@ -16,6 +16,7 @@
     ?>
     <main id="main">
 <form>
+  <h2>Podium Check Form</h2>
   <label for="proj1norm">Projector 1 normal hours:</label><br>
   <input type="number" id="proj1norm" name="proj1norm"><br>
   <label for="proj2eco">Projector 1 eco hours:</label><br>
