@@ -1,12 +1,12 @@
 <header>
     <div id="title">
         <h1>Litehouse <span id='hide-when-small'>Podium Check</span></h1>
-        <a href="login.php" id="user">
+        <a id="user">
             <div class= "dropdown">
-            <button class="dropbtn">Welcome, User!</button>
+            <button class="dropbtn">Welcome, <span id='username'>User!</span></button>
             <img src="./img/white-user-png.png">
                 <div class="dropdown-content">
-                    <a href="#">Login</a>
+                    <a href="login.php">Login</a>
                     <a href="#">Logout</a>
                 </div>
             </div>
