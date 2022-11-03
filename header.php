@@ -7,8 +7,10 @@
         </div>
         <h1>Lighthouse <span class='hide-when-small'>Podium Check</span></h1>
         <div id='user' class="dropdown">
-            <span id='welcome' class="dropbtn hide-when-small">Welcome, <span id='username'>User!</span></span>
+            <div id='ucontainer'>
+            <div id='welcome' class="dropbtn hide-when-small">Welcome, <span id='username'>User!</span></div>
             <img class='icon' src="./img/white-user-invert.png">
+            </div>
             <div class="dropdown-content">
                 <a href="login.php">Log in</a>
                 <a href="#">Log out</a>

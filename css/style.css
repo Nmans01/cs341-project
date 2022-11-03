@@ -78,6 +78,11 @@ header {
     padding: 5px 10px;
     border-radius: 6px;
 }
+#ucontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .icon {
     border-radius: 23px;
     background-color: #3c6792;
@@ -88,10 +93,6 @@ header {
 }
 #welcome {
     margin-right:  10px;
-}
-#user > a {
-    display: flex;
-    align-items: center;
 }
 #user:hover {
     background-color: rgba(63, 49, 71, 0.5);
@@ -105,7 +106,6 @@ a#user {
     text-decoration: none;
 }
 
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -113,6 +113,8 @@ a#user {
 .dropdown-content {
     display: none;
     position: absolute;
+    left: 100%;
+    transform: translate(-100%,0%);
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
