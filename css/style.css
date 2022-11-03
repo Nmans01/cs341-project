@@ -275,8 +275,7 @@ form {
 }
 form label {
     display: block flex;
-    margin-top: 2px;
-    margin-bottom: 4px;
+    margin: 3px 0px;
 }
 form label > input {
     margin-left: auto;

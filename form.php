@@ -19,6 +19,8 @@
   <main id="main">
     <h2>Podium Check Form</h2>
     <form>
+      <fieldset><label for="room">Room
+          <input type="text" id="room" name="room"></label></fieldset>
       <fieldset>
         <legend>Projector Hours</legend>
         <label for="proj1norm">Projector 1 normal hours:
