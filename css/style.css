@@ -265,8 +265,25 @@ footer {
     }
 }
 
-/* ================================================ Stub image ================================================ */
+/* ================================================ Page-specific ================================================ */
 #stub {
     max-width: 100%;
     opacity: .5;
+}
+form {
+    max-width: 500px;
+}
+form label {
+    display: block flex;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+form label > input {
+    margin-left: auto;
+}
+form fieldset {
+    margin-bottom: 15px;
+}
+form legend {
+    font-weight: bold;
 }

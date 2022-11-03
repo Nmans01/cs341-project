@@ -1,7 +1,7 @@
 <?php //header("Location: stub.php"); ?>
 <html>
 <head>
-    <title>Litehouse</title>
+    <title>Home</title>
     <?PHP
     require('head.php');
     ?>
