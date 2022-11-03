@@ -2,8 +2,14 @@
     <div id="title">
         <h1>Litehouse <span id='hide-when-small'>Podium Check</span></h1>
         <a href="login.php" id="user">
-            <div>Welcome back, user.</div>
+            <div class= "dropdown">
+            <button class="dropbtn">Welcome, User!</button>
             <img src="./img/white-user-png.png">
+                <div class="dropdown-content">
+                    <a href="#">Login</a>
+                    <a href="#">Logout</a>
+                </div>
+            </div>
         </a>
     </div>
     <nav>
