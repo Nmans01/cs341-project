@@ -1,7 +1,21 @@
 <?php //header("Location: stub.php"); 
 ?>
+<?php //header("Location: stub.php"); ?>
+<html>
+<head>
+    <title>Stub!</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <?PHP
+    require('head.php');
+    ?>
+</head>
 
-<form>
+<body>
+    <?PHP
+    require('header.php');
+    ?>
+    <main id="main">
+    <form>
   <label for="proj1norm">Projector 1 normal hours:</label><br>
   <input type="number" id="proj1norm" name="proj1norm"><br>
   <label for="proj2eco">Projector 1 eco hours:</label><br>
@@ -27,3 +41,9 @@
 
   <input type="submit" value="Submit">
 </form> 
+    </main>
+    <?PHP
+    require('footer.php');
+    ?>
+</body>
+</html>
