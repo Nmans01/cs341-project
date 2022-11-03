@@ -50,7 +50,7 @@ header {
     text-transform: uppercase;
     font-weight: bold;
 
-    display: flex;
+    display: flex block;
     justify-content: center;
     flex-direction: column;
 
@@ -73,15 +73,13 @@ header {
     display: none;
 }
 /* ================================================ USER BUTTON/DROP DOWN ================================================ */
-#user {
-    text-shadow: .5px 1px var(--old-lavender);
-    padding: 5px 10px;
-    border-radius: 6px;
-}
 #ucontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+#welcome {
+    text-shadow: .5px 1px var(--old-lavender);
 }
 .icon {
     border-radius: 23px;
@@ -94,7 +92,7 @@ header {
 #welcome {
     margin-right:  10px;
 }
-#user:hover {
+.dropdown:hover {
     background-color: rgba(63, 49, 71, 0.5);
     box-shadow: inset 2px 2px 2px rgb(79, 82, 85),
                 inset -1px -1px 2px rgb(154, 162, 170);
@@ -107,6 +105,8 @@ a#user {
 }
 
 .dropdown {
+    padding: 5px 10px;
+    border-radius: 6px;
     position: relative;
     display: inline-block;
 }
@@ -205,11 +205,13 @@ footer {
         border-radius: 5px;
         border: solid 1px var(--rich-black-fogra-29);
     }
-
+    .dropdown {
+        padding: 0px;
+    }
     header {
         position: fixed;
         top: 0px;
-        width: 100%;
+        width: calc(100% - 10px);
 
         padding: 5px;
         padding-top: 7px;
