@@ -4,12 +4,6 @@
         <a href="login.php" id="user">
             <div>Welcome back, user.</div>
             <img src="./img/white-user-png.png">
-            <div class="dropdown">
-                <div class="dropdown-content">
-                    <a href="#">Login</a>
-                    <a href="#">Logout</a>
-            </div>
-                </div>
         </a>
     </div>
     <nav>
