@@ -1,8 +1,7 @@
 <?php //header("Location: stub.php"); ?>
 <html>
 <head>
-    <title>Stub!</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Litehouse</title>
     <?PHP
     require('head.php');
     ?>

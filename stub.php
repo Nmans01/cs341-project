@@ -2,7 +2,6 @@
 
 <head>
     <title>Stub!</title>
-    <link rel="stylesheet" href="./css/style.css">
     <?PHP
     require('head.php');
     ?>
