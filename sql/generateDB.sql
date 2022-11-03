@@ -1,3 +1,5 @@
+-- TODO: make this script wipe all tables in case we want to fully redo DB?
+
 CREATE TABLE IF NOT EXISTS `u413142534_project8`.`users` (`userID` INT NOT NULL AUTO_INCREMENT, `username` VARCHAR(25) NOT NULL, `name_first` VARCHAR(30) NOT NULL, `name_last` VARCHAR(30) NOT NULL, `password` VARCHAR(30) NOT NULL, `isAdmin` BOOLEAN NULL DEFAULT 0, PRIMARY KEY(`userID`));
 
 CREATE TABLE IF NOT EXISTS `u413142534_project8`.`questions` (`questionID` INT NOT NULL AUTO_INCREMENT, `question` VARCHAR(200) NOT NULL, `questionType` VARCHAR(50) NOT NULL, `answer1` VARCHAR(50) NULL, `answer2` VARCHAR(50) NULL, `answer3` VARCHAR(50) NULL, `answer4` VARCHAR(50) NULL, `isSaved` BOOLEAN NULL DEFAULT 0, PRIMARY KEY(`questionID`));
