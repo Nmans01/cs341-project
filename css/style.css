@@ -277,12 +277,10 @@ footer {
 form {
     max-width: 500px;
 }
-form label {
-    display: block flex;
+.form-row {
     margin: 3px 0px;
-}
-form label > input {
-    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
 }
 form fieldset {
     margin-bottom: 15px;
