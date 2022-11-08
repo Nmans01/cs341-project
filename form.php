@@ -65,6 +65,35 @@
           <label for="LapCheck4"> Laptop VGA works</label>
           <input type="checkbox" id="LapCheck4" value="LapVga">
         </div>
+        <div class="form-row">
+          <label for="lapcheck5"> Laptop 3.5mm sound works</label>
+          <input type="checkbox" id="LapCheck5" value="LapVgaSound">
+        </div>
+      </fieldset>
+
+
+      <fieldset>
+        <legend>Lectern PC checks</legend>
+        <div class="form-row">
+          <label for="pcCheck1"> Can you play sound through the room speakers?</label>
+          <input type="checkbox" id="pcCheck1" value="pcSound">
+        </div>
+        <div class="form-row">
+          <label for="pcCheck2"> Do the cameras work in Zoom?</label>
+          <input type="checkbox" id="pcCheck2" value="pcWebcam">
+        </div>
+        <div class="form-row">
+          <label for="pcCheck2"> Are the room mics working in Zoom?</label>
+          <input type="checkbox" id="pcCheck2" value="pcWebcam">
+        </div>
+        <div class="form-row">
+          <label for="lapcheck3"> Does the Hovercam work on the PC?</label>
+          <input type="checkbox" id="LapCheck3" value="pcHovercam">
+        </div>
+        <div class="form-row">
+          <label for="lapcheck4"> Does the Hovercam work over the Crestron system?</label>
+          <input type="checkbox" id="LapCheck4" value="pcHovercamCrestron">
+        </div>
       </fieldset>
 
       <input type="submit" value="Submit">
