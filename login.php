@@ -6,7 +6,8 @@
     <?PHP
     require('head.php');
     ?>
-   <link rel="stylesheet" href="./css/login-page.css">
+    <script src="login-page.js"></script>
+    <link rel="stylesheet" href="./css/login-page.css">
 </head>
 
 <body>
