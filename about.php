@@ -9,7 +9,7 @@
         <?PHP
             require('header.php');
         ?>
-        <div id="main">
+        <main id="main">
             <h2>About The Site</h2>
             <p>This site was created by Noah George, Nate Mansfield, Nick Nolt, and Ethan Weitkamp (a.k.a. The Brogrammers) as our semester project for CS341.</p>
             <p>It serves to improve upon the ITS department's process for completing podium checks, which ensure that classroom audio-video technology is functioning properly.</p>
@@ -19,7 +19,7 @@
                 <li><a href="https://tasks.office.com/elizabethtown.onmicrosoft.com/Home/PlanViews/GsCtgWu2S0q23YETr7VrKGQABEsM?Type=PlanLink&Channel=Link&CreatedTime=638025151759570000">Task Board</a></li>
                 <li><a href="./docs/ERD.png">ERD Model</a></li>
             </ul>
-        </div>
+        </main>
         <?PHP
             require('footer.php');
         ?>
