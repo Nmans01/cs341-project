@@ -72,6 +72,7 @@
       </fieldset>
 
 
+      <!-- Lectern PC/Zoom/Hovercam checks -->
       <fieldset>
         <legend>Lectern PC checks</legend>
         <div class="form-row">
@@ -87,14 +88,21 @@
           <input type="checkbox" id="pcCheck2" value="pcWebcam">
         </div>
         <div class="form-row">
-          <label for="lapcheck3"> Does the Hovercam work on the PC?</label>
-          <input type="checkbox" id="LapCheck3" value="pcHovercam">
+          <label for="pcCheck3"> Does the Hovercam work on the PC?</label>
+          <input type="checkbox" id="pcCheck3" value="pcHovercam">
         </div>
         <div class="form-row">
-          <label for="lapcheck4"> Does the Hovercam work over the Crestron system?</label>
-          <input type="checkbox" id="LapCheck4" value="pcHovercamCrestron">
+          <label for="pcCheck4"> Does the Hovercam work over the Crestron system?</label>
+          <input type="checkbox" id="pcCheck4" value="pcHovercamCrestron">
         </div>
       </fieldset>
+
+      <!-- Checks for specialized rooms?
+    H110/212 has mics
+    Grab Gibble proj hours?
+    Event
+    
+    -->
 
       <input type="submit" value="Submit">
     </form>
