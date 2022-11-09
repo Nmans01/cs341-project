@@ -15,7 +15,7 @@
   ?>
   <main id="main">
     <h2>Podium Check Form</h2>
-    <form>
+    <form class='pc'>
       <fieldset>
         <div class='form-row'>
           <label for="room">Room</label>
