@@ -66,7 +66,7 @@
           <input type="checkbox" id="LapCheck4" value="LapVga">
         </div>
         <div class="form-row">
-          <label for="lapcheck5"> Laptop 3.5mm sound works</label>
+          <label for="LapCheck5"> Laptop 3.5mm sound works</label>
           <input type="checkbox" id="LapCheck5" value="LapVgaSound">
         </div>
       </fieldset>
@@ -84,16 +84,16 @@
           <input type="checkbox" id="pcCheck2" value="pcWebcam">
         </div>
         <div class="form-row">
-          <label for="pcCheck2"> Are the room mics working in Zoom?</label>
-          <input type="checkbox" id="pcCheck2" value="pcWebcam">
+          <label for="pcCheck3"> Are the room mics working in Zoom?</label>
+          <input type="checkbox" id="pcCheck3" value="pcWebcam">
         </div>
         <div class="form-row">
-          <label for="pcCheck3"> Does the Hovercam work on the PC?</label>
-          <input type="checkbox" id="pcCheck3" value="pcHovercam">
+          <label for="pcCheck4"> Does the Hovercam work on the PC?</label>
+          <input type="checkbox" id="pcCheck4" value="pcHovercam">
         </div>
         <div class="form-row">
-          <label for="pcCheck4"> Does the Hovercam work over the Crestron system?</label>
-          <input type="checkbox" id="pcCheck4" value="pcHovercamCrestron">
+          <label for="pcCheck5"> Does the Hovercam work over the Crestron system?</label>
+          <input type="checkbox" id="pcCheck5" value="pcHovercamCrestron">
         </div>
       </fieldset>
 
