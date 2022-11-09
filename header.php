@@ -12,7 +12,7 @@
                 <img class='icon' src="./img/white-user-invert.png">
             </div>
             <div class="dropdown-content">
-                <a href="login.html">Log in</a>
+                <a href="login.php">Log in</a>
                 <a href="profile.php">Your Profile</a>
                 <a href="#">Log out</a>
             </div>
