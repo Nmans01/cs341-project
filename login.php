@@ -9,16 +9,14 @@
   require('head.php');
   ?>
   <link rel="stylesheet" href="./css/login-page.css">
-  <script src="login-page.js"></script>
+  <script src="./js/login.js"></script>
 </head>
 
 <body>
   <main id="login-holder">
     <h1 id="login-header">Log in</h1>
     
-    <div id="login-error-msg-holder">
-      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-    </div>
+    <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
     
     <form id="login-form">
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
