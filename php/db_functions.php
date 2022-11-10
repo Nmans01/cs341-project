@@ -1,35 +1,59 @@
 <?php
 
-require('config.php');
+function login() {
+    require('config.php');
+    $error="";
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $myusername = mysqli_real_escape_string($db,$_POST['username']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      
+      $sql = "SELECT userID,name_first,isAdmin FROM users WHERE username = '$myusername' and pass = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      //$active = $row['active'];
+      
+      $count = mysqli_num_rows($result);
+      
+      
+      // If result matched $myusername and $mypassword, table row must be 1 row
+		
+      if ($count == 1) {
+         $_SESSION['login_user'] = $myusername;
+         $_SESSION['name_first'] = $row['name_first'];
+         $_SESSION['isAdmin'] = $row['isAdmin'];
+         header("location: index.php");
+      } else {
+        //echo '<script>alert("Test")</script>';
+        $error = "Your username or password is invalid.";
+      }
+   }
+   return $error;
+}
 
-function connect_to_db(){
-    global $database,$databasehost,$databaseuser,$databasepassword;
-    $dsn = "mysql:host=$databasehost;dbname=$database;charset=UTF8";
-    $pdo = new PDO($dsn, $databaseuser, $databasepassword);
-    return $pdo;
-}
-function fetchAll($sql,$params=null){
-    $pdo = connect_to_db();
-    $stmt = $pdo->prepare($sql);
-    if($params!=null)
-        $stmt->execute($params);
-    return $stmt->fetchAll();
-}
-function authorize($username,$password){
-    global $salt1, $salt2;
-    $loginString = $salt1.$password.$salt2;
-    $sql = "SELECT * FROM user where login = :u and password = md5(:p) ;";
-    $params = [":u"=>$username,":p"=>$loginString];
-    //send to database to check for user
-    $rowInDB = false;
-    $pdo = connect_to_db();
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute($params); 
-    $user = $stmt->fetch(PDO::FETCH_ASSOC);
-    
-    //if user is there
-    if(is_array($user) && isset($user["first"]))
-        return $user;
-    else
-        return false;
+
+// TODO Get user -> current assignment -> room group -> list of rooms
+function getRooms() {
+    require('config.php');
+    $error="";
+   
+   if($_SERVER["REQUEST_METHOD"] == "POST") {
+      // username and password sent from form 
+      
+      $myusername = $_SESSION['login_user'];
+      
+      // sort to the newest assignment/one that matches the date where username matches
+      $sql = "SELECT userID,name_first,isAdmin FROM users WHERE username = '$myusername' and pass = '$mypassword'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+      
+      $count = mysqli_num_rows($result);
+      
+      // else {
+      // $error = "Your username or password is invalid.";
+      // }
+   }
+   return $error;
 }

@@ -29,7 +29,7 @@ if(!isset($_SESSION['name_first'])) {
         <a href="form.php"><span class='hide-when-small'>Podium Check</span> Form</a>
         <!--<a href="trends.php">Trends</a>-->
         <!--<a href="inventory.php">inventory</a>-->
-        <?php if ($_SESSION['isAdmin']==1) echo 
+        <?php if ($_SESSION['isAdmin']) echo 
             '<a href="admin.php">Admin</a>'; 
         ?>
         <a href="about.php">About</a>

@@ -1,36 +1,9 @@
 <!DOCTYPE html>
 
 <?php
-   include("./php/config.php");
-   $error="";
+   include("./php/db_functions.php");
    session_start();
-   
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-      
-      $sql = "SELECT userID,name_first,isAdmin FROM users WHERE username = '$myusername' and pass = '$mypassword'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      //$active = $row['active'];
-      
-      $count = mysqli_num_rows($result);
-      
-      
-      // If result matched $myusername and $mypassword, table row must be 1 row
-		
-      if ($count == 1) {
-         $_SESSION['login_user'] = $myusername;
-         $_SESSION['name_first'] = $row['name_first'];
-         $_SESSION['isAdmin'] = $row['isAdmin'];
-         header("location: index.php");
-      } else {
-        //echo '<script>alert("Test")</script>';
-        $error = "Your username or password is invalid.";
-      }
-   }
+   $error=login();
 ?>
 
 <html lang="en">
