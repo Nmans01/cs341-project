@@ -5,6 +5,7 @@
     <?PHP
     require('head.php');
     ?>
+    <script src="./js/assignment.js"></script>
 </head>
 
 <body>
