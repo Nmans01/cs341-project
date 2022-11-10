@@ -9,31 +9,35 @@
      * 
      */
     function init() {
-      id(" ").addEventListener("click", getJsonData);
+      id("assigment").innerText = getJsonData;
     }
   
     /**
      * Fetches and displays JSON data for a random city.
      */
     function getJsonData() {
-      id("response").innerHTML = "";
-      let url = URL + "?city=random";
+      id("assignment").innerHTML = "";
+      //let url = URL + "?city=random";
   
-      fetch(url)
-        .then(checkStatus)
-        .then(JSON.parse)
-        .then(loadData)
-        .catch(() => {
-          id("response").innerText = "Something went wrong with the request :(";
-        });
+      postName();
     }
+    async function postName() {
+        const object = { name: 'James Gordon' };
+        const response = await fetch('/api/names', {
+          method: 'POST',
+          body: JSON.stringify(object)
+        });
+        const responseText = await response.text();
+        console.log(responseText); // logs 'OK'
+      }
+      postName();
   
     /**
      * Function to load the POI JSON data into the page.
      * @param data - the data that is being returned from the API in JSON format
      */
     function loadData(data) {
-      let response = id("response");
+      let response = id("assignment");
       // Add the site name, city name
       let siteName = document.createElement("p");
       siteName.innerText = data["poi"] + ", " + data["name"];
