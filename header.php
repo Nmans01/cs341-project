@@ -27,11 +27,13 @@ if(!isset($_SESSION['name_first'])) {
     <nav>
         <a href="index.php">Home</a>
         <a href="form.php"><span class='hide-when-small'>Podium Check</span> Form</a>
-        <!--<a href="trends.php">Trends</a>-->
+        <a href="trends.php">Trends</a>
         <!--<a href="inventory.php">inventory</a>-->
         <?php if ($_SESSION['isAdmin']) echo 
-            '<a href="admin.php">Admin</a>'; 
+            '<a href="admin.php">Admin</a>
+            <a href="user.php">User</a>'; 
         ?>
         <a href="about.php">About</a>
+        
     </nav>
 </header>
