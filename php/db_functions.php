@@ -6,11 +6,10 @@ function login() {
    
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
-      
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+      $myhash = mysqli_real_escape_string($db,password_hash($_POST['password'], PASSWORD_DEFAULT)); 
       
-      $sql = "SELECT userID,name_first,isAdmin FROM users WHERE username = '$myusername' and pass = '$mypassword'";
+      $sql = "SELECT userID,name_first,isAdmin FROM user WHERE username = '$myusername' and passwordHash = '$myhash'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       //$active = $row['active'];
