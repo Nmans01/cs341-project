@@ -6,4 +6,4 @@ $databased = "M0delzR@wesome";
 $salt1 = "cobra";
 $salt2 = "Python";
 
-$db = mysqli_connect($databasehost,$databaseuser,$databased,$database);
+//$db = mysqli_connect($databasehost,$databaseuser,$databased,$database);

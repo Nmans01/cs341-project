@@ -23,7 +23,7 @@
   <main id="login-holder">
     <h1 id="login-header">Log in</h1>
     
-    <p id="login-error-msg"><?php echo $error; ?></p>
+    <p id="login-error-msg"><?php echo $error;?></p>
     
     <form  action = "" method = "post" id="login-form">
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">

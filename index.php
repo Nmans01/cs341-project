@@ -1,4 +1,5 @@
-<?php //header("Location: stub.php"); ?>
+<?php //header("Location: stub.php");
+?>
 <html>
 <head>
     <title>Home</title>
@@ -11,10 +12,14 @@
 <body>
     <?PHP
     require('header.php');
+    require('./php/db_functions.php');
+    $assignment = assignmentMessage();
     ?>
     <main id="main">
         <h2>Your Assignment</h2>
-        <p id='assignment'>Nothing today.</p>
+        <p id='assignment'>
+            <?php echo $assignment;?>
+        </p>
         <a href='form.php'>Click here to access the form.</a>
         <h2>Calendar</h2>
         <div id='calendar'>
