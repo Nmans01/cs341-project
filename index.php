@@ -17,17 +17,18 @@
     //assignmentMessage();
     ?>
     <main id="main">
-        <h2>Your Assignment</h2>
-        <div id='calendar'>
-            <p id='assignment'>
+        <h2>Home</h2>
+        <h3>Your Assignment</h3>
+        <div id='assignment'>
+            <p>
                 <?php echo $assignment; ?>
             </p>
-            <a href='form.php'>Click here to access the form.</a>
+            <a href='form.php'><div id="access-btn">Click here to access the form.</div></a>
         </div>
-        <h2>Calendar</h2>
+        <h3>Calendar</h3>
         <div id='calendar'>
             <div id="calendar-header">
-                <h3>November 2022</h3>
+                <h4>November 2022</h4>
             </div>
             <div id="calendar-body">
                 <div class="weekday">sun</div>

@@ -272,7 +272,23 @@ footer {
 }
 
 /* ================================================ Page-specific ================================================ */
-
+#assignment {
+    max-width: 500px;
+    border: gray 2px solid;
+    border-radius: 5px;
+    padding: 7px;
+}
+#access-btn {
+        width: calc(100% - 14px);
+        padding: 7px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        background-color: #3a3a3a;
+        cursor: pointer;
+        outline: none;
+        text-decoration: none;
+}
 #calendar {
     max-width: 500px;
     border: gray 2px solid;
