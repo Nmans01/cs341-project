@@ -1,12 +1,12 @@
 <?php //header("Location: stub.php");
 ?>
 <html>
+
 <head>
     <title>Home</title>
     <?PHP
     require('head.php');
     ?>
-    <script src="./js/assignment.js"></script>
 </head>
 
 <body>
@@ -14,16 +14,21 @@
     require('header.php');
     require('./php/db_functions.php');
     $assignment = assignmentMessage();
+    //assignmentMessage();
     ?>
     <main id="main">
         <h2>Your Assignment</h2>
-        <p id='assignment'>
-            <?php echo $assignment;?>
-        </p>
-        <a href='form.php'>Click here to access the form.</a>
+        <div id='calendar'>
+            <p id='assignment'>
+                <?php echo $assignment; ?>
+            </p>
+            <a href='form.php'>Click here to access the form.</a>
+        </div>
         <h2>Calendar</h2>
         <div id='calendar'>
-            <div id="calendar-header"><h3>November 2022</h3></div>
+            <div id="calendar-header">
+                <h3>November 2022</h3>
+            </div>
             <div id="calendar-body">
                 <div class="weekday">sun</div>
                 <div class="weekday">mon</div>
@@ -74,4 +79,5 @@
     require('footer.php');
     ?>
 </body>
+
 </html>

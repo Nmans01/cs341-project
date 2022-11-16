@@ -82,9 +82,12 @@ function login() {
 }
 
 function getAssignment($date = null) {
+
    $pdo = connect_to_db();
 
    if (!$date) $date = time();
+
+   date_default_timezone_set('America/New_York');
 
    $myuserID = $_SESSION['userID'];
    $mydate = date("Y-m-d",$date);
@@ -97,6 +100,7 @@ function getAssignment($date = null) {
    $stmt->execute(array($myuserID,$mydate)); 
    $result = $stmt->fetchAll();
 
+   debug_to_console(count($result));
    if (!count($result)) return null;
    return $result[0]['roomGroup_roomGroupID'];
 }
