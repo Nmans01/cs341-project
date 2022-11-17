@@ -32,7 +32,7 @@ if(!isset($_SESSION['name_first'])) {
         <?php if ($_SESSION['isAdmin']) echo 
             '<a href="trends.php">Trends</a>
             <a href="admin.php">Admin</a>
-            <a href="user.php">User</a>'; 
+            <a href="user.php">Users</a>'; 
         ?>
         <a href="about.php">About</a>
         
