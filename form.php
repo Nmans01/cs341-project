@@ -21,6 +21,12 @@
           <label for="room">Room</label>
           <select type="select" id="room" name="room">
             <option value="">Select a room...</option>
+            <?php
+              require('./php/db_functions.php');
+              foreach (getRooms() as $room) {
+                echo '<option value="'.$room['roomName'].'">'.$room['roomName'].'</option>';
+              }
+            ?>
           </select>
         </div>
       </fieldset>

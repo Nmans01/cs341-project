@@ -1,0 +1,120 @@
+Set 1, group 1: 
+N101
+N104
+N106
+N127
+N129
+N131
+N201
+N202
+N203
+N204
+
+Set 1, group 2:
+N205
+N206
+N207
+N208
+N210
+N212
+N228
+N230
+N232
+N234
+
+Set 1, group 3:
+E163
+E164
+E182
+E184
+E187
+E260H
+E270
+E273
+E280
+E281
+
+Set 1, group 4:
+E360
+E362
+E368
+E370
+E373
+E380
+E382
+M108
+M215
+M232
+
+Set 2, group 1:
+H107
+H108
+H109
+H110
+H112
+H114
+H211
+H212
+H213
+H214
+H215
+
+Set 2, group 2:
+HL205 (Library)
+L150
+L151
+L152
+L153
+L249
+L250
+L251
+L252
+L253
+
+Set 2, group 3:
+ST101
+ST204
+ST210
+ST211
+Z102
+Z114
+Z116
+Z125
+Z126
+Z204
+
+Set 2, group 4:
+W001
+W204
+W211
+W304
+W310
+BSC 233
+BSC Tower (key)
+TH105
+YC classroom
+M+M Mars
+
+insert into room (roomID, roomGroup_roomGroupID, roomName) values
+("N101", 1, "Nicarry 101"),
+("N104", 1, "Nicarry 104"),
+("N106", 1, "Nicarry 106"),
+("N127", 1, "Nicarry 127"),
+("N129", 1, "Nicarry 129"),
+("N131", 1, "Nicarry 131"),
+("N201", 1, "Nicarry 201"),
+("N202", 1, "Nicarry 202"),
+("N203", 1, "Nicarry 203"),
+("N204", 1, "Nicarry 204")
+
+insert into room (roomID, roomGroup_roomGroupID, roomName) values
+("N101", 1, "Nicarry 101"),
+("N104", 1, "Nicarry 104"),
+("N106", 1, "Nicarry 106"),
+("N127", 1, "Nicarry 127"),
+("N129", 1, "Nicarry 129"),
+("N131", 1, "Nicarry 131"),
+("N201", 1, "Nicarry 201"),
+("N202", 1, "Nicarry 202"),
+("N203", 1, "Nicarry 203"),
+("N204", 1, "Nicarry 204")

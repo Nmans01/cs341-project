@@ -81,6 +81,7 @@ function login() {
    return $error;
 }
 
+// Returns the group ID that the active user is assigned for the day.
 function getAssignment($date = null) {
 
    $pdo = connect_to_db();
@@ -142,26 +143,22 @@ function assignmentMessage() {
    return $out.'.';
 }
 
-// TODO Get user -> current assignment -> room group -> list of rooms
+// Returns an array of room names (TODO return IDs) that the active user is assigned for the day.
 function getRooms() {
-    require('config.php');
-    $error="";
-   
-   if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form 
-      
-      $myusername = $_SESSION['login_user'];
-      
-      // sort to the newest assignment/one that matches the date where username matches
-      $sql = "SELECT userID,name_first,isAdmin FROM users WHERE username = '$myusername' and pass = '$mypassword'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-      
-      $count = mysqli_num_rows($result);
-      
-      // else {
-      // $error = "Your username or password is invalid.";
-      // }
-   }
-   return $error;
+   $pdo = connect_to_db();
+
+   //$myuserID = $_SESSION['userID'];
+   $myGroup = getAssignment();
+
+   $stmt = $pdo->prepare(
+      "SELECT roomName 
+      FROM room 
+      WHERE roomGroup_roomGroupID = ?"
+   );
+   $stmt->execute(array($myGroup)); 
+   $result = $stmt->fetchAll();
+
+   debug_to_console(count($result));
+   if (!count($result)) return null;
+   return $result;
 }
