@@ -4,6 +4,7 @@ if(!isset($_SESSION['name_first'])) {
     header("Location:login.php"); 
 }
 ?>
+<script src="./js/mobile_nav.js"></script>
 <header>
     <div id="title">
         <div id='menu' class="dropdown">
