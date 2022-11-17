@@ -7,21 +7,22 @@
     <?PHP
     require('head.php');
     ?>
+    <script src="./js/message.js"></script>
 </head>
 
 <body>
     <?PHP
     require('header.php');
-    require('./php/db_functions.php');
-    $assignment = assignmentMessage();
+    //require('./php/db_functions.php');
+    //$assignment = assignmentMessage();
     //assignmentMessage();
     ?>
     <main id="main">
         <h2>Home</h2>
-        <h3>Your Assignment</h3>
+        <h3>Today's Assignment</h3>
         <div id='assignment'>
-            <p>
-                <?php echo $assignment; ?>
+            <p id='message'>
+                <?php //echo $assignment; ?>
             </p>
             <a href='form.php'><div id="access-btn">Click here to access the form.</div></a>
         </div>

@@ -9,12 +9,12 @@ function genTestCases() {
         array('admin',  password_hash('ILPhysicalSecurity',PASSWORD_DEFAULT),   'admin',    'admin',    1),
         array('user1',  password_hash('bestPassword',PASSWORD_DEFAULT),         'Joe',      'Mama',     0),
         array('user2',  password_hash('worstpassword123',PASSWORD_DEFAULT),     'Joe',      'Biden',    0),
-        array('user3',  password_hash('testtesttest',PASSWORD_DEFAULT),         'Eron',     'Ma',       0),
+        array('user3',  password_hash('testtesttest',PASSWORD_DEFAULT),         'Elon',     'Musk',       0),
     );
 
     foreach ($testUsers as $user) {
         $stmt = $pdo->prepare(
-            "INSERT INTO user (
+            "INSERT INTO siteUser (
             username,
             passwordHash,
             name_first,
@@ -38,11 +38,11 @@ function genTestCases() {
         $stmt = $pdo->prepare(
         "INSERT INTO assignment (
             assignmentDate, 
-            user_userID, 
+            siteUser_userID, 
             roomGroup_roomGroupID
         ) VALUES (
             ?,
-            (SELECT userID FROM user WHERE username=?),
+            (SELECT userID FROM siteUser WHERE username=?),
             ?
         )");
         $stmt->execute($assignment); 

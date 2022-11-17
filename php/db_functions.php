@@ -27,7 +27,7 @@ function login() {
    // DELETE THIS LATER! FOR NOW: IF NO USERS,
    // DELETE ALL ASSIGNMENTS AND GENERATE TEST USERS
    $stmt = $pdo->prepare(
-      "SELECT COUNT(*) FROM user"
+      "SELECT COUNT(*) FROM siteUser"
    );
    $stmt->execute(); 
    $result = $stmt->fetch();
@@ -53,7 +53,7 @@ function login() {
    // only get key information for user session
    $stmt = $pdo->prepare(
       "SELECT userID,passwordHash,name_first,isAdmin 
-      FROM user 
+      FROM siteUser 
       WHERE username = ?"
    );
    $stmt->execute(array($myusername)); 
