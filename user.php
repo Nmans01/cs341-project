@@ -66,7 +66,7 @@
     </tr>
   </table>
   <button id ="addUser">Add User</button>
-  <button id ="addUser">Save Changes</button>
+  <button id ="SaveChange">Save Changes</button>
 </div>
 </Main>
 <?PHP
