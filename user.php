@@ -28,7 +28,6 @@
 
 
 <div style="overflow-x:auto;">
-<button id ="addUser">Add User</button>
   <table>
     <tr>
       <th>First Name</th>
@@ -66,6 +65,7 @@
       </td>
     </tr>
   </table>
+  <button id ="addUser">Add User</button>
 </div>
 </Main>
 <?PHP

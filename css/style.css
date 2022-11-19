@@ -349,7 +349,7 @@ form legend {
 }
 /* UserTab dropdown button */
 .dropbtn2 {
-    background-color: white;
+    background-color:grey;
     color:black;
     padding: 16px;
     font-size: 16px;
@@ -366,6 +366,7 @@ form legend {
     text-align: center;
     position: relative;
     display: inline-block;
+    background-color: grey;
   }
   
   /* Dropdown Content (Hidden by Default) */
