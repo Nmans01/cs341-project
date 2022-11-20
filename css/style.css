@@ -366,7 +366,7 @@ form legend {
     text-align: center;
     position: relative;
     display: inline-block;
-    background-color: grey;
+    /*background-color: grey;*/
   }
   
   /* Dropdown Content (Hidden by Default) */
