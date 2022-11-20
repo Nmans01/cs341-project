@@ -19,7 +19,7 @@
     <div class="dropDown">
     <button class="dropbtn2">Edit Options</button>
     <div class="dropdownLinks">
-      <a href="Date">Date</a>
+      <a href="Date">Data</a>
       <a href="Form">Form edit</a>
     </div>
   </div>
