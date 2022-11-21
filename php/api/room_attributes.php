@@ -3,31 +3,22 @@ session_start();
 require("../db_functions.php");
 $pdo = connect_to_db();
 
-header('Content-Type: text/plain; charset=UTF-8');
+header('Content-Type: application/json; charset=utf-8');
+
+if (!isset($_POST['room'])){
+    echo json_encode([]);
+    return;
+}
+
+$room = $_POST['room'];
 
 $stmt = $pdo->prepare(
-    "SELECT roomGroup_roomGroupID, userID, concat(name_first,' ',name_last) as full_name
-    FROM assignment
-    JOIN siteUser ON assignment.siteUser_userID=siteUser.userID
-    WHERE assignmentDate = :date;"
+    "SELECT categoryName, displayName
+    FROM attribute
+    JOIN roomAttribute ON attribute.attributeName=roomAttribute.attribute_attributeName
+    WHERE room_roomID = :room;"
 );
-$stmt->execute(array('date'=>$mydate)); 
-$result = $stmt->fetchAll();
+$stmt->execute(array('room'=>$room)); 
+$result = $stmt->fetchAll(PDO::FETCH_GROUP);
 
-// If no results
-if (!count($result)) {
-    echo 'Nothing today.';
-}
-
-$nameList = array();
-foreach ($result as $teammate) {
-
-    if (!array_key_exists($teammate['roomGroup_roomGroupID'],$nameList) )
-        $nameList[$teammate['roomGroup_roomGroupID']]=array();
-    array_push($nameList[$teammate['roomGroup_roomGroupID']],$teammate['full_name']);
-}
-foreach ($nameList as $no => $group) {
-    $out = 'Checking Room Group '.$no.':';
-    $out = $out.' '.implode(', ',$group);
-    echo $out.'.';
-}
+echo json_encode($result);

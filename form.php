@@ -16,7 +16,7 @@
   ?>
   <main id="main">
     <h2>Podium Check Form</h2>
-    <form class='pc'>
+    <form class='pc' id='roomForm'>
       <fieldset>
         <div class='form-row'>
           <label for="room">Room</label>
@@ -25,6 +25,8 @@
           </select>
         </div>
       </fieldset>
+    </form>
+    <form class='pc'>
       <fieldset>
         <legend>Projector Hours</legend>
         <div class="form-row">

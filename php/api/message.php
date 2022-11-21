@@ -50,7 +50,7 @@ else {
             SELECT roomGroup_roomGroupID
             FROM assignment
             WHERE siteUser_userID = :uid AND assignmentDate = :date
-        );"
+        ) AND assignmentDate = :date;"
     );
     $stmt->execute(array('uid'=>$myuserID,'date'=>$mydate)); 
     $result = $stmt->fetchAll();
