@@ -4,6 +4,7 @@
 
 <head>
   <title>Users</title>
+  <script src="./js/user.js"></script>
   <?PHP
   require('head.php');
   ?>
@@ -28,7 +29,7 @@
 
 
 <div style="overflow-x:auto;">
-  <table>
+  <table id = "UserTable">
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
