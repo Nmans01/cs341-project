@@ -1,5 +1,5 @@
 <?php
-/* session_start();
+ session_start();
 require("../db_functions.php");
 $pdo = connect_to_db();
 
@@ -33,4 +33,4 @@ if ($_SESSION['isAdmin']) {
         $out = $out.' '.implode(', ',$group);
         echo $out.'.';
     }
-}  */
+}  
