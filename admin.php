@@ -1,1 +1,14 @@
-<?php header("Location: stub.php"); ?>
+<?php header("Location: stub.php"); 
+
+
+
+
+
+
+
+
+
+
+
+
+?>
