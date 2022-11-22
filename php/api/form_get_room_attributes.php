@@ -13,7 +13,7 @@ if (!isset($_POST['room'])){
 $room = $_POST['room'];
 
 $stmt = $pdo->prepare(
-    "SELECT categoryName, displayName
+    "SELECT categoryName, attributeName,  displayName
     FROM attribute
     JOIN roomAttribute ON attribute.attributeName=roomAttribute.attribute_attributeName
     WHERE room_roomID = :room;"

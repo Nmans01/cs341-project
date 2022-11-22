@@ -3,12 +3,16 @@
 
     let roomForm;
     let roomSelect;
+    let checkForm;
+    let submitBtn;
 
     window.addEventListener('load',init);
 
     function init () {
         roomForm = document.getElementById("roomForm");
         roomSelect = document.getElementById("room");
+        checkForm = document.getElementById("checkForm");
+        submitBtn = document.getElementById("submit");
 
         // On site load, populate dropdown with list of rooms
         fetch('./php/api/assigned_rooms.php')
@@ -20,6 +24,7 @@
                 console.log("Nothing");
                 return;
             }
+            
             let nrHTML = "";
             table.forEach(row => {
                 nrHTML+='<option value="'+row[0]+'">'+row[1]+'</option>';
@@ -35,26 +40,47 @@
 
             let data = new FormData(roomForm);
 
-            fetch('./php/api/room_attributes.php', {
+            fetch('./php/api/form_get_room_attributes.php', {
                 method: 'POST',
                 body: data
             })
             .then((response) => {
                 console.log(response);
                 return response.json();})
-            .then((table) => {
-                console.log(table);
+            .then((response) => {
+                let table = Object.entries(response);
 
-                /* if (!table.length) {
-                    console.log("Nothing");
-                    return;
-                }
+                let holder = document.createElement('div');
 
-                let nrHTML = "";
-                table.forEach(row => {
-                    nrHTML+='<option value="'+row[0]+'">'+row[1]+'</option>';
+                let nrHTML = '';
+                // for each category, make a fieldset
+                table.forEach(category => {
+                    nrHTML = `
+                    <fieldset>
+                        <legend>`+category[0]+`</legend>
+                    `;
+
+                    // for each attribute in the category, make a label and checkbox
+                    // wrapped in a div
+                    category[1].forEach(row => {
+                        nrHTML += `
+                        <div class="form-row">
+                            <label for="`+row.attributeName+`">`+row.displayName+`:</label>
+                            <input type="checkbox" id="`+row.attributeName+`" name="`+row.attributeName+`">
+                        </div>
+                        `;
+                    });
+
+                    nrHTML += `
+                    </fieldset>
+                    `;
+
+                    holder.innerHTML+=nrHTML;
                 });
-                roomSelect.innerHTML += nrHTML; */
+
+                while (holder.firstChild) {
+                    checkForm.insertBefore(holder.firstChild,submitBtn);
+                }
             });
         });
     }

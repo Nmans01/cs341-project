@@ -58,6 +58,7 @@ else {
     // If no results
     if (!count($result)) {
         echo 'Nothing today.';
+        return;
     }
 
     $out = 'You will be checking Room Group '.$result[0]['roomGroup_roomGroupID'];

@@ -26,7 +26,7 @@
         </div>
       </fieldset>
     </form>
-    <form class='pc'>
+    <form class='pc' id='checkForm'>
       <fieldset>
         <legend>Projector Hours</legend>
         <div class="form-row">
@@ -49,7 +49,7 @@
       <!-- add normal + eco hours together for a total hour calculation -->
 
 
-      <!-- Check of Laptop inputs -->
+      <!-- Check of Laptop inputs
       <fieldset>
         <legend>Laptop Inputs</legend>
         <div class="form-row">
@@ -75,7 +75,7 @@
       </fieldset>
 
 
-      <!-- Lectern PC/Zoom/Hovercam checks -->
+      Lectern PC/Zoom/Hovercam checks
       <fieldset>
         <legend>Lectern PC checks</legend>
         <div class="form-row">
@@ -98,7 +98,7 @@
           <label for="pcCheck5"> Does the Hovercam work over the Crestron system?</label>
           <input type="checkbox" id="pcCheck5" value="pcHovercamCrestron">
         </div>
-      </fieldset>
+      </fieldset> -->
 
       <!-- Checks for specialized rooms?
     H110/212 has mics
@@ -107,7 +107,7 @@
     
     -->
 
-      <input type="submit" value="Submit">
+      <input type="button" value="Submit" id='submit'>
     </form>
   </main>
   <?PHP
