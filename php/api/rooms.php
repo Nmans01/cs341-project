@@ -2,16 +2,13 @@
 
 require("../db_functions.php");
 
-
 if (isset($_GET["groupID"])) {
-    # First, check if they passed the optional list parameter. If so, check that the list
-    # is either items or categories.
     $group = strtolower($_GET["groupID"]);
     $result = get_group($group);
     header("Content-type: application/json");
     echo(json_encode($result));
     
-} else { # No category parameter passed, so return entire menu.
+} else {
     $result = get_groups();
     header("Content-type: application/json");
     echo(json_encode($result));
