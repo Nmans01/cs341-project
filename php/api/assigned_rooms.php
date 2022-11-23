@@ -11,6 +11,18 @@ $myuserID = $_SESSION['userID'];
 // Returns a json containing an array of ID/name pairs for rooms which a user is assigned.
 header('Content-Type: application/json; charset=utf-8');
 
+if ($_SESSION['isAdmin']) {
+    $stmt = $pdo->prepare(
+        "SELECT roomID, roomName
+        FROM room;"
+    );
+    $stmt->execute(array('uid'=>$myuserID,'date'=>$mydate)); 
+    $result = $stmt->fetchAll();
+    
+    echo json_encode($result);
+    return;
+}
+
 $stmt = $pdo->prepare(
     "SELECT roomID, roomName
     FROM room
