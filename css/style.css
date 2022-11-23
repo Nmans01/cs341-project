@@ -264,7 +264,7 @@ footer {
         margin-top: 6px;
     }
     #main {
-        height: calc(100vh - 167px);
+        min-height: calc(100vh - 167px);
     }
     footer {
         min-height: 0px;
