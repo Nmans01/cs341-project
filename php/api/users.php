@@ -38,7 +38,7 @@ function get_users(){
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
         list($uID, $uName, $uFirst, $uLast, $uEmail, $uIsAdmin) = array_values($row);
         $user = array("userID" => $uID, "username" => $uName, "firstName" => $uFirst, "lastName" => $uLast, "email" => $uEmail, "isAdmin" => $uIsAdmin);
-        
+
         if ($last_group !== $uID) {
             if ($last_group) {
               $result[$last_group] = $group_items;
