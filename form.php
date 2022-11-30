@@ -46,8 +46,11 @@
           <input type="number" id="proj2eco" name="proj2eco">
         </div>
       </fieldset>
-      <!-- add normal + eco hours together for a total hour calculation -->
 
+      <div id='dynamicForm'>
+
+      </div>
+      <!-- add normal + eco hours together for a total hour calculation -->
 
       <!-- Check of Laptop inputs
       <fieldset>

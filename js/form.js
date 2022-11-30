@@ -4,7 +4,7 @@
     let roomForm;
     let roomSelect;
     let checkForm;
-    let submitBtn;
+    let dynamicForm;
 
     window.addEventListener('load',init);
 
@@ -12,7 +12,7 @@
         roomForm = document.getElementById("roomForm");
         roomSelect = document.getElementById("room");
         checkForm = document.getElementById("checkForm");
-        submitBtn = document.getElementById("submit");
+        dynamicForm = document.getElementById("dynamicForm");
 
         // On site load, populate dropdown with list of rooms
         fetch('./php/api/assigned_rooms.php')
@@ -32,13 +32,17 @@
             roomSelect.innerHTML += nrHTML;
         });
 
-        // On updating dropdown value, populate form with room attributes.
+        // On updating dropdown value, populate form with 
+        // 1. projectors.
+        // 2. room attributes.
         roomSelect.addEventListener('change',(e)=>{
 
             let roomID = e.target.value;
             console.log(e.target.value);
 
             let data = new FormData(roomForm);
+
+            dynamicForm.innerHTML = 'Loading...<br><br>';
 
             fetch('./php/api/form_get_room_attributes.php', {
                 method: 'POST',
@@ -78,9 +82,7 @@
                     holder.innerHTML+=nrHTML;
                 });
 
-                while (holder.firstChild) {
-                    checkForm.insertBefore(holder.firstChild,submitBtn);
-                }
+                dynamicForm.innerHTML = holder.innerHTML;
             });
         });
     }
