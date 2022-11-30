@@ -8,6 +8,9 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['firs
 else if(isset($_POST['deleteID'])){
     deleteUser();
 }
+else if (isset($_POST['userID']) && isset($_POST['newUsername']) && isset($_POST['newPassword']) && isset($_POST['newFirst']) && isset($_POST['newLast']) && isset($_POST['newEmail']) && isset($_POST['newIsAdmin'])){
+    updateUser();
+}
 else if(isset($_POST['promoteID'])){
     addAdmin();
 }
@@ -21,9 +24,9 @@ else {
 function createUser(){
     $db = connect_to_db();
     $sql = "INSERT INTO siteUser (username, passwordHash, name_first, name_last, email, isAdmin) 
-    VALUES (:IDuser, :passwd, :firstname, :lastname, :email, :isadmin)";
+    VALUES (:username, :passwd, :firstname, :lastname, :email, :isadmin)";
     $stmt = $db->prepare($sql);
-    $stmt->execute(array('IDuser'=>$_POST['username'], 'passwd'=>$_POST['password'], 'firstname'=>$_POST['first'],
+    $stmt->execute(array('username'=>$_POST['username'], 'passwd'=>$_POST['password'], 'firstname'=>$_POST['first'],
     'lastname'=>$_POST['last'], 'email'=>$_POST['email'], 'isadmin'=>$_POST['isAdmin']));
 }
 
@@ -32,6 +35,16 @@ function deleteUser(){
     $sql = "DELETE FROM siteUser WHERE userID = :IDuser";
     $stmt = $db->prepare($sql);
     $stmt->execute(array('IDuser'=>$_POST['deleteID']));
+}
+
+function updateUser(){
+    $db = connect_to_db();
+    $sql = "UPDATE siteUser SET username=:username, passwordHash=:passwd,
+    name_first=:firstname, name_last=:lastname, email=:email, isAdmin=:isadmin
+    WHERE userID=:IDuser";
+    $stmt = $db->prepare($sql);
+    $stmt->execute(array('IDuser'=>$_POST['userID'], 'username'=>$_POST['newUsername'], 'passwd'=>$_POST['newPassword'], 'firstname'=>$_POST['newFirst'],
+    'lastname'=>$_POST['newLast'], 'email'=>$_POST['newEmail'], 'isadmin'=>$_POST['newIsAdmin']));
 }
 
 function addAdmin(){
