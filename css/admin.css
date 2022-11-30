@@ -1,0 +1,26 @@
+main section {
+    border: solid gray 2px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#headerLinks {
+    position: relative;
+    right: 0px;
+    top: 0px
+}
+
+.adminRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    margin-bottom: 10px;
+}
+
+form, table {
+    border: solid gray 2px;
+    border-radius: 2.5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
