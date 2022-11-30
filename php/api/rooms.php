@@ -8,6 +8,10 @@ if (isset($_GET["groupID"])) {
     header("Content-type: application/json");
     echo(json_encode($result));
     
+} else if (isset($_GET["search"])){
+    $result = searchRooms($_GET["search"]);
+    header("Content-type: application/json");
+    echo(json_encode($result));
 } else {
     $result = get_groups();
     header("Content-type: application/json");
@@ -55,6 +59,15 @@ function get_groups(){
         }
         return $result;
 
+}
+
+function searchRooms($search){
+  $db = connect_to_db();
+  $sql = "SELECT * FROM room WHERE CONCAT(roomID, ' ', roomName) LIKE CONCAT('%', :search, '%');";
+  $stmt = $db->prepare($sql);
+  $stmt->execute(array('search'=>$search));
+  $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+  return $data;
 }
 
 ?>
