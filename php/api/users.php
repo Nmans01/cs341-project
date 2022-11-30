@@ -8,7 +8,13 @@ if (isset($_GET["userID"])) {
     header("Content-type: application/json");
     echo(json_encode($result));
     
-} else {
+}
+else if (isset($_GET["search"])){
+    $result = searchUsers($_GET["search"]);
+    header("Content-type: application/json");
+    echo(json_encode($result));
+}
+else {
     $result = get_users();
     header("Content-type: application/json");
     echo(json_encode($result));
@@ -54,6 +60,16 @@ function get_users(){
         }
         return $result;
 
+}
+
+function searchUsers($search){
+    $db = connect_to_db();
+    $sql = "SELECT userID, username, name_first, name_last, email, isAdmin FROM siteUser
+    WHERE CONCAT(name_first, ' ', name_last, ' ', username) LIKE CONCAT('%', :search, '%');";
+    $stmt = $db->prepare($sql);
+    $stmt->execute(array('search'=>$search));
+    $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    return $data;
 }
 
 ?>
