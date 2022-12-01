@@ -20,7 +20,7 @@ if(!isset($_SESSION['name_first'])) {
             </div>
             <div class="dropdown-content">
                 <!--<a href="login.php">Log in</a>-->
-                <a href="profile.php">Your Profile</a>
+                <!-- <a href="profile.php">Your Profile</a> -->
                 <a href="./php/logout.php">Log out</a>
             </div>
         </div>
@@ -30,9 +30,9 @@ if(!isset($_SESSION['name_first'])) {
         <a href="form.php"><span class='hide-when-small'>Podium Check</span> Form</a>
         <!--<a href="inventory.php">inventory</a>-->
         <?php if ($_SESSION['isAdmin']) echo 
-            '<a href="trends.php">Trends</a>
-            <a href="admin.php">Admin</a>
-            <a href="user.php">Users</a>'; 
+            /* '<a href="trends.php">Trends</a> */
+            '<a href="admin.php">Admin</a>'
+            /* <a href="user.php">Users</a>' */; 
         ?>
         <a href="about.php">About</a>
         

@@ -2,6 +2,7 @@
 //header("Location: stub.php"); 
 ?>
 
+<!DOCTYPE html>
 <html>
     <head>
         <title>Admin</title>
@@ -9,35 +10,41 @@
             require('head.php');
         ?>
         <link rel="stylesheet" href="./css/admin.css">
+        <script src="./js/user.js"></script>
     </head>
     <body>
         <?PHP
             require('header.php');
+            echo password_hash('password',PASSWORD_DEFAULT);
         ?>
         <main id="main">
             <h2>Admin</h2>
-            <div id='headerLinks'>
-                <a>Edit Room Groups</a> |
-                <a>Edit Room Attributes</a>
-            </div>
             <section>
                 <h3>Edit Users</h3>
                 <div class='adminRow'>
-                    <input type='text' placeholder="Search for a user...">
+                    <input type='text' placeholder="Search for a user..." id='userSearch'>
                     <div>
-                        <button>Add User</button>
-                        <button>Remove User</button>
+                        <button id='addUser'>Add User</button>
+                        <button id='removeUser'>Remove User</button>
                     </div>
                 </div>
                 <table>
-                    <tr></tr>
+                    <tbody id='userTable'>
+
+                    </tbody>
                 </table>
-                <form action="">
+                <form action="" id='userForm'>
 
                 </form>
             </section>
             <section>
-                <h3>Edit Rooms</h3>
+                <div id='roomHeader'>
+                    <h3>Edit Rooms</h3>
+                    <div>
+                        <a>Edit Room Groups</a> |
+                        <a>Edit Room Attributes</a>
+                    </div>
+                </div>
                 <div class='adminRow'>
                     <div>
                         <select>
