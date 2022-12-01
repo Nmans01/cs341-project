@@ -15,7 +15,6 @@
     <body>
         <?PHP
             require('header.php');
-            echo password_hash('password',PASSWORD_DEFAULT);
         ?>
         <main id="main">
             <h2>Admin</h2>
