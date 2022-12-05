@@ -1,0 +1,60 @@
+                                            Podium Check Form 
+
+
+	This semester when our team first started looking at ideas of a way we should take our project it was not an easy 
+process. We started off just spitballing ideas to each other and nothing ever really stuck with any of us, so in the event of 
+just needing to get started we came up with the idea to have a desktop application that would generate backgrounds for games, 
+movies, etc. In the beginning none of us really loved the idea and it showed as no one seemed to be interested enough to work 
+on it and commit anything to the project. However, looking back now it was a blessing in disguise, one of our group members had
+done some digging with 3D libraries in python and java script and came to the conclusion that this idea may have been a little 
+over our heads. It seemed that making a whole website and an application based on this idea was going to take a lot longer than 
+a semester as we would have to teach ourselves how to use these libraries in our code while learning web development at the same 
+time. With all of this information we were back to square one when Nick Nolt had come up with the idea to make a website/form for 
+the IT department that made the podium checks go a lot smoother. This idea would stick with us as we felt this could be something 
+that could actually contribute to the college and live on past us, which is what we were really looking for.
+    During this project what made us all really interested in this web application was the purpose. We took on this project 
+because we knew this would be an actual use for the college and specifically the IT department. This site’s functional purpose 
+was to create a form so podium checks would be a lot more organized and easier to navigate from the admin and user side. To 
+fulfill this purpose we as a team successfully made a calendar that shows the student who they were working with for the day 
+and what room they would be in to conduct the podium check. After the student had that information the two would go to the room 
+and start filling out the form making sure everything that needed to be checked was documented. After they were done with the room 
+they would hit submit and the data from that form would now be stored in the database for the admin to see. The admin side was made 
+so they could add and delete users, see the data coming from the forms being submitted by the employees to see how the technology 
+is holding up, and lastly modify room attributes on the form. So with these factors that go into our website we absolutely achieved 
+our purpose for the project as well as the functionality for it as well. 
+    The user stories in this project are really simple actually considering the only people who would be using this site are people 
+who work in IT. Specifically there are two different cases in which this site would be used, first there is an admin who is able to 
+have a little more accessibility with using the site where they can modify the forms, see all of the users, and look at data from 
+the forms. The users on this site are only able to access the form and see the calendar with the job they had for the day and who 
+works with them on the job. Here is what our user stories looked like, “							
+
+                                                    [Admin]
+“As the admin I want to be able to have a form that gives me the ability to easily track room attributes for different rooms and 
+their displays. With this form we can check various aspects including things like lamp usage, projector runtimes, and overall room usage. ”
+
+The administration from IT can use this form and database to make the classroom check easier by having one place to store all information 
+about the room and its usage, to easier track when components are nearing their end of life cycle.
+
+                                            [Normal Users/ITS student workers]
+
+“As a student this form will help me be able to check and see if there are any issues with any of the technology that the podium is using 
+like the projector lamp, audio, and DVD player so that it can be fixed and the data can be easily stored."
+
+The student aspect of the form would be helpful so that IT workers can look at these forms and know what problems are going on with the 
+podium and what would need to be fixed. This is just an easier way to go about fixing these issues for the school.”
+    Some of the key problems our team ran into had to do with time conflicts regarding getting the whole team to meet at a place to go 
+over whatever was on the agenda for the day, working with the database and implementing the APIs, and time management. First one of the 
+biggest issues we had was getting everyone’s schedule to align so we could meet as a team. This may not seem like that big of a deal but 
+looking back at the work we were able to accomplish, the best version of it always happened when we were all together as a team. I think 
+this was due to the fact that when we were all together and someone had an issue there were three other team members there to give immediate 
+feedback and help, however when we were not together it was more of figuring things out on your own with trial and error. Using text and 
+calling only worked and went so far when that person was not there with you to actually see the issue, obviously. Second, implementing APIs 
+and using the database was a little bit of a challenge for us just because it was something new and while three of us were taking web 
+development at the same time, we were learning while building the site so implementing these attributes was a lot more of just multiple 
+tries and figuring out the issues. If all of us had the prior knowledge then putting the APIs and using the database with our site probably 
+wouldn't have taken as much time to implement. Lastly, our time management began to become sort of an issue because of us switching projects 
+so late. Looking at the project, there are still a couple features we wanted to add before handing it off to IT. We fell somewhat short on 
+completing absolutely everything due to the fact that we pretty much switched projects half-way through the semester. As stated in the 
+conclusion, we ran into some problems with our first project so after we knew we wanted to switch projects it was already close to the 
+half-way point in the semester. In turn, all the work we were doing was pretty much at a double time pace to make sure we had a site 
+that would be viable for the final presentation and something we could all four be proud of at the end.
