@@ -12,7 +12,7 @@ main section {
     /* position: relative; */
 }
 
-section > * {
+section {
     max-width: 500px;
 }
 
