@@ -58,3 +58,22 @@ completing absolutely everything due to the fact that we pretty much switched pr
 conclusion, we ran into some problems with our first project so after we knew we wanted to switch projects it was already close to the 
 half-way point in the semester. In turn, all the work we were doing was pretty much at a double time pace to make sure we had a site 
 that would be viable for the final presentation and something we could all four be proud of at the end.
+
+
+// Nick part
+
+One of the biggest challenges we faced in our software development project was managing the scope of the project. We had a clear vision of what we wanted to achieve, 
+but as we began working on the project, we realized that our initial plans were too ambitious and would take significantly longer to complete than we had anticipated.
+We had to make the difficult decision to scale back on some of our initial plans and focus on completing the core functionality of the software. 
+This was challenging as it required us to prioritize and make difficult choices about what features to include and what to leave out. We had planned to include a "trends" page,
+where we would provide information about usage rates of different classrooms over time. We ended up prioritizing the main functions of the project over this feature.
+We also had to make sure that the final product still met the needs of our target audience, even with the reduced scope. To help move the project along quicker, we held regular team meetings 
+outside of class to help keep each other accountable. It was also helpful for our project to ensure that clear communication channels were in place, in the form of a text groupchat where we posted regular updates.
+We also assigned specific tasks and responsibilities to each team member, and provided support and guidance as was necessary. Through this approach, we were able to keep the team on track,
+and tie in all of our different parts into one project. Despite these challenges, we were able to successfully complete the project and deliver a functional product.
+
+The overall goal of our project was to increase the efficiency of podium checks for the IT department. This is accomplished by using a few key features.
+The first feature is that the software allows for the easy creation and distribution of student groups and room assignments every week, as opposed to creating those lists manually.
+The second feature, and in my opinion the most important feature, is that the software will dynamically create a list to checks that should be completed in each room. 
+These checks will be customized based off of the equipment in each room to ensure that the students are accurately checking what is installed in the room. This will also allow for non-standard rooms, 
+such as Gibble auditorium, to be included inside of this podium check.
