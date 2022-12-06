@@ -76,4 +76,10 @@ The overall goal of our project was to increase the efficiency of podium checks 
 The first feature is that the software allows for the easy creation and distribution of student groups and room assignments every week, as opposed to creating those lists manually.
 The second feature, and in my opinion the most important feature, is that the software will dynamically create a list to checks that should be completed in each room. 
 These checks will be customized based off of the equipment in each room to ensure that the students are accurately checking what is installed in the room. This will also allow for non-standard rooms, 
-such as Gibble auditorium, to be included inside of this podium check.
+such as Gibble auditorium, to be included inside of this podium check. The third feature is that the data from these checks will be stored in a organized database, 
+with the ability to be efficiently searched and displayed by the admin of the site. This is a great improvement over the massive excel sheet that the department currently uses to store all of the data from the checks.
+Lastly, the site allows for the admin to add, edit, and delete users of the site through a web-based user interface. The site also allows for the admin to change the attributes in each room using a UI.
+With this benefit, the admin will be able to keep inventory of the rooms up-to-date without modifying any of the code. The admin will also be able to edit the checklist for each individual room without modifying the code.
+
+Our testing plan was very simple, since the interface is very easy to use and does not allow for much variability of user inputs. We ran lots of data through the form and ensure that it was properly collected and stored.
+We also tested our mobile version of the site, to ensure that no display issues occurred from resizing all of the pages to fit on a mobile screen.
