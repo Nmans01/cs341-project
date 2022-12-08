@@ -88,3 +88,17 @@ modifying any of the code. The admin will also be able to edit the checklist for
 Our testing plan was very simple, since the interface is very easy to use and does not allow for much variability of user inputs. We ran lots of data through 
 the form and ensure that it was properly collected and stored. We also tested our mobile version of the site, to ensure that no display issues occurred from 
 resizing all of the pages to fit on a mobile screen.
+
+	The use cases for our project are rather limited so we focused more on different scenarios when the same user could be accessing the website, as well as admin access to the website. Out use cases are as follows:
+Use case 1 (Student with no group assignment):
+This use case is for a student who has an account on the site but has not been given an assignment for rooms to be checked. Either they are not working that day or they are using the site on the wrong day. They should still be able to sign in and see the home page, which tells them they have no assignment.
+Use case 2 (Student with assignment on desktop):
+This use case if for a student who has been given a room group assignment and is accessing the site on a laptop or desktop computer. This user should be able to log in and see who is in their group and which rooms they have been assigned. They can also fill the form required to check each individual room they have been assigned.
+Use case 3 (Student with assignment on mobile):
+This use case is the same as use case 2 except the student will be using a mobile device to access the site. The main difference is that the interface for viewing the website should be more mobile friendly with a navigation bar better suited for mobile.
+User case 4 (Admin user):
+The admin should be able to log in just like everyone else and see the form page if they want. The main difference for the admin is that they can see an additional item in the navigation menu for the admin page. From the admin page the admin user should be able to create new users, assign users to different groupings, and add or edit rooms on the room list.
+
+Our traceability matrix will be provided in the docs folder as traceability_matrix.xlsx
+
+	In conclusion of our project, we ended up finishing most of the features we wanted to implement, and the ones we did not are close to being completed. We are very satisfied with the result of our project and with a few small additions believe it would be able to serve its intended purpose well. After we got off to a slow start with changing our project idea a couple times, we ended up with a product that works well. This project was also challenging for us because none of us had any or much experience with wed development in the past, so there was a lot to learn. Not only did we learn a lot about web applications and their development, but also about how project groups would work together in a realistic scenarios such as our potential future jobs.
