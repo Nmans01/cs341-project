@@ -89,7 +89,7 @@ Our testing plan was very simple, since the interface is very easy to use and do
 the form and ensure that it was properly collected and stored. We also tested our mobile version of the site, to ensure that no display issues occurred from 
 resizing all of the pages to fit on a mobile screen.
 
-	The use cases for our project are rather limited so we focused more on different scenarios when the same user could be accessing the website, as well as admin access to the website. Out use cases are as follows:
+The use cases for our project are rather limited so we focused more on different scenarios when the same user could be accessing the website, as well as admin access to the website. Out use cases are as follows:
 Use case 1 (Student with no group assignment):
 This use case is for a student who has an account on the site but has not been given an assignment for rooms to be checked. Either they are not working that day or they are using the site on the wrong day. They should still be able to sign in and see the home page, which tells them they have no assignment.
 Use case 2 (Student with assignment on desktop):
