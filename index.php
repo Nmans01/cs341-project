@@ -26,7 +26,7 @@
             </p>
             <a href='form.php'><div id="access-btn">Click here to access the form.</div></a>
         </div>
-        <h3>Calendar</h3>
+        <!-- <h3>Calendar</h3>
         <div id='calendar'>
             <div id="calendar-header">
                 <h4>November 2022</h4>
@@ -75,7 +75,7 @@
                 <div class="day other-month"></div>
                 <div class="day other-month"></div>
             </div>
-        </div>
+        </div> -->
     </main>
     <?PHP
     require('footer.php');

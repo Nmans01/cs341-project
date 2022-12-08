@@ -2,7 +2,7 @@
 
 require("../db_functions.php");
 
-if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['first']) && isset($_POST['last']) && isset($_POST['email']) && isset($_POST['isAdmin']) ){
+if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['name_first']) && isset($_POST['name_last']) /* && isset($_POST['email']) */ && isset($_POST['isAdmin']) ){
     createUser();
 }
 else if(isset($_POST['deleteID'])){
