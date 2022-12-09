@@ -59,6 +59,28 @@ conclusion, we ran into some problems with our first project so after we knew we
 half-way point in the semester. In turn, all the work we were doing was pretty much at a double time pace to make sure we had a site 
 that would be viable for the final presentation and something we could all four be proud of at the end.
 
+Data Model: 
+
+    After lots of tweaking, our data model ended up being fairly intricate, with lots of small tables of few columns being what best suited our needs. 
+Since most of the podium check form is merely a checklist to guide the students through their tasks, much of our model’s focus revolved around “lamp hours”, 
+the sole information students record as they complete podium checks.  
+
+    Lamp hours allow ITS to track how soon replacement bulbs will be needed for projectors across campus, and can also be used to identify rooms where students 
+and faculty are not compliant in powering down classroom equipment. Therefore, the lamp hour data itself is valuable, and since different rooms across campus 
+have one, two, or no projectors, it was worth factoring each projector on campus into the data model individually, rather than being attached to a room.  
+
+    Ultimately, the data model has a lot of moving parts, since it needs to connect projectors to rooms to form entries made by students, who themselves are 
+organized by their weekly assignments. Additionally, since the rooms are nowhere near consistent in terms of their tech, we opted to store each individual 
+feature of a room as its own row in a table. While this appears to be convoluted, it allows for each room’s checklist to be fine-tuned and accurate to what 
+students should expect to see, and it gives the admins of the site full control in case these rooms end up changing in the future. The ER diagram is available 
+in the docs folder of our github project. 
+
+Division of Labor: 
+
+	To be blunt, division of labor was one of our biggest challenges. None of us came into the class with an understanding of full-stack development, and some but not all 
+of us were only now taking a web course that began to teach some full-stack fundamentals. This made it hard to divide up tasks. Nevertheless, we pushed through. 
+Often through the project, we overcame the learning obstacles together, and then broke off to individually apply what we had all just learned in different parts of the site. 
+Those of us not taking web development generally focused on overhead tasks like forward planning and deciding on how to make the project the most presentable. 
 
 // Nick part
 
